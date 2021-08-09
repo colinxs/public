@@ -18,6 +18,9 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable sudo
   };
+  
+  services.openssh.enable = true;
+  services.openssh.permitRootLogin = "no";
 
   environment.systemPackages = with pkgs; [
     # Basic
