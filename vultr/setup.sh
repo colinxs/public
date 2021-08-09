@@ -39,9 +39,9 @@ mkswap -L swap ${DRIVE}2
 # Mount target file system
 mount /dev/disk/by-label/nixos /mnt
 
-# Mount boot
-mkdir -p /mnt/boot
-mount /dev/disk/by-label/boot /mnt/boot
+# Mount boot (EFI ONLY)
+# mkdir -p /mnt/boot
+# mount /dev/disk/by-label/boot /mnt/boot
 
 # Activate swap
 swapon ${DRIVE}2
