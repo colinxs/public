@@ -3,7 +3,7 @@
 # Run with:
 # cd "$(curl -s -L https://github.com/colinxs/public/archive/master.tar.gz | tar -xvz | head -1)" && ./nixos-vultr.sh
 
-set -v
+set -ev
 
 DRIVE=/dev/vda
 
