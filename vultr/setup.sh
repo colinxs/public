@@ -35,7 +35,7 @@ mount /dev/disk/by-label/nixos /mnt
 # Copy configuration
 mkdir -p /mnt/etc/nixos
 cp -f "${DIR}/configuration.nix" /mnt/etc/nixos
-cp -f "${DIR}/configuration-extra.nix" /mnt/etc/nixos
+cp -f "${DIR}/configuration-core.nix" /mnt/etc/nixos
 
 # Perform hardware scan
 nixos-generate-config --root /mnt
