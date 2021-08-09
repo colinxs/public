@@ -5,7 +5,7 @@
 
 set -ev
 
-DIR="$(dirname "$0")"
+DIR="$(realpath "$(dirname "$0")")"
 
 DRIVE=/dev/vda
 
