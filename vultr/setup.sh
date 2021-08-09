@@ -37,6 +37,8 @@ mkdir -p /mnt/etc/nixos
 ln -s "${DIR}/config/configuration.nix" /mnt/etc/nixos/configuration.nix
 
 # Perform hardware scan
+# HACK
+ln -s /mnt/etc/nixos/hardware-configuration.nix /etc/nixos/hardware-configuration.nix
 nixos-generate-config --root /mnt
 
 # And install!
