@@ -24,3 +24,21 @@ sudo parted $DRIVE -- mkpart primary linux-swap -${SWAP_MB}MiB 100%
 sudo parted $DRIVE -- mkpart ESP fat32 1MiB ${BOOT_MB}MiB
 sudo parted $DRIVE -- set 3 esp on
 
+# Format primary partition
+mkfs.ext4 -L nixos ${DRIVE}1
+
+# Create swap
+mkswap -L swap ${DRIVE}2
+
+# Format boot
+mkfs.fat -F 32 -n boot ${DRIVE}3
+
+# Mount target file system
+mount /dev/disk/by-label/nixos /mnt
+
+# Mount boot
+mkdir -p /mnt/boot
+mount /dev/disk/by-label/boot /mnt/boot
+
+# Activate swap
+swapon ${DRIVE}2
