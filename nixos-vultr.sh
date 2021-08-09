@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Run with:
-# cd "$(curl -s -L https://github.com/colinxs/public/archive/master.tar.gz | tar -xvz | head -1)" && ./nixos-vultr.sh
+# cd "$(curl -s -L https://github.com/colinxs/public/archive/master.tar.gz | tar -xvz | head -1)" && sudo ./nixos-vultr.sh
 
 set -ev
 
@@ -26,6 +26,7 @@ parted $DRIVE -- set 3 esp on
 
 # Format primary partition
 mkfs.ext4 -L nixos ${DRIVE}1
+ls /dev/disk/by-label
 
 # Create swap
 mkswap -L swap ${DRIVE}2
