@@ -18,7 +18,7 @@ sudo parted $DRIVE -- mklabel gpt
 
 # Create swap partition
 sudo parted $DRIVE -- mkpart primary ${BOOT_MB}MiB -${SWAP_MB}MiB
-sudo parted $DRIVE -- mkpart primary linux-swap -${SWAP_MB}GiB 100%
+sudo parted $DRIVE -- mkpart primary linux-swap -${SWAP_MB}MiB 100%
 
 # Create boot partition
 sudo parted $DRIVE -- mkpart ESP fat32 1MiB ${BOOT_MB}MiB
