@@ -34,7 +34,7 @@ mount /dev/disk/by-label/nixos /mnt
 
 # Copy configuration
 mkdir -p /mnt/etc/nixos
-ln -s "${DIR}/config/configuration.nix" /mnt/etc/nix/configuration.nix
+ln -s "${DIR}/config/configuration.nix" /mnt/etc/nixos/configuration.nix
 
 # Perform hardware scan
 nixos-generate-config --root /mnt
@@ -43,6 +43,7 @@ nixos-generate-config --root /mnt
 nixos-install --no-root-passwd
 
 # Clone to user account and replace with flake config
+# Using the mounted paths
 mv ~/public /mnt/home/nixos
 rm /mnt/etc/nix/configuration.nix
 ln -s /home/nixos/public/vultr/config/flake.nix /mnt/etc/nix/flake.nix
