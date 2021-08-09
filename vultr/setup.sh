@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Run with:
-# cd "$(curl -s -L https://github.com/colinxs/public/archive/master.tar.gz | tar -xvz | head -1)" && sudo ./vultr/setup.sh
+# nix-shell -p git --command "git clone https://github.com/colinxs/public.git && sudo ./public/vultr/setup.sh"
 
 set -ev
 
@@ -34,11 +34,15 @@ mount /dev/disk/by-label/nixos /mnt
 
 # Copy configuration
 mkdir -p /mnt/etc/nixos
-cp -f "${DIR}/configuration.nix" /mnt/etc/nixos
-cp -f "${DIR}/configuration-core.nix" /mnt/etc/nixos
+ln -s "${DIR}/config/configuration.nix" /mnt/etc/nix/configuration.nix
 
 # Perform hardware scan
 nixos-generate-config --root /mnt
 
 # And install!
 nixos-install --no-root-passwd
+
+# Clone to user account and replace with flake config
+mv ~/public /mnt/home/nixos
+rm /mnt/etc/nix/configuration.nix
+ln -s /home/nixos/public/vultr/config/flake.nix /mnt/etc/nix/flake.nix
