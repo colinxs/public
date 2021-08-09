@@ -47,7 +47,9 @@ SWAP_MB=$([ $MEM_MB -lt $MIN_MEM_MB ] && echo $MIN_MEM_MB || echo $MEM_MB)
 # swapon ${DRIVE}2
 
 mkdir -p /mnt/etc/nixos
-cp "${DIR}/configuration.nix" /mnt/etc/nixos
-cp "${DIR}/configuration-extra.nix" /mnt/etc/nixos
+cp -f "${DIR}/configuration.nix" /mnt/etc/nixos
+cp -f "${DIR}/configuration-extra.nix" /mnt/etc/nixos
+
+nixos-generate-config --root /mnt
 
 nixos-install --no-root-passwd
