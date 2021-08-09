@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Run with:
-# cd "$(curl -s -L https://github.com/colinxs/public/archive/master.tar.gz | tar -xvz | head -1)" && sudo ./nixos-vultr.sh
+# cd "$(curl -s -L https://github.com/colinxs/public/archive/master.tar.gz | tar -xvz | head -1)" && sudo ./vultr/setup.sh
 
 set -ev
 
@@ -33,8 +33,8 @@ ls /dev/disk/by-label
 # Create swap
 mkswap -L swap ${DRIVE}2
 
-# Format boot
-mkfs.fat -F 32 -n boot ${DRIVE}3
+# Format boot (EFI ONLY)
+# mkfs.fat -F 32 -n boot ${DRIVE}3
 
 # Mount target file system
 mount /dev/disk/by-label/nixos /mnt
