@@ -5,6 +5,12 @@
 
 set -ev
 
+SERVER_NAME="$1"
+if [ -z "$SERVER_NAME" ]; then
+    echo "You forgot the server name"
+    exit
+fi
+
 DIR="$(realpath "$(dirname "$0")")"
 
 DRIVE=/dev/vda
@@ -32,20 +38,11 @@ swapon ${DRIVE}2
 # Mount target file system
 mount /dev/disk/by-label/nixos /mnt
 
-# Copy configuration
-mkdir -p /mnt/etc/nixos
-ln -s "${DIR}/config/configuration.nix" /mnt/etc/nixos/configuration.nix
-
 # Perform hardware scan
-# HACK
-ln -s /mnt/etc/nixos/hardware-configuration.nix /etc/nixos/hardware-configuration.nix
-nixos-generate-config --root /mnt
+rm -f "${DIR}/config/${SERVER_NAME}/hardware-configuration.nix"
+nixos-generate-config --root /mnt --dir "${DIR}/config/${SERVER_NAME}" 
 
 # And install!
-nixos-install --no-root-passwd
+nixos-install --no-root-passwd --flake "${DIR}/config/${SERVER_NAME}"
 
-# Clone to user account and replace with flake config
-# Using the mounted paths
-mv /home/nixos/public /mnt/home/nixos
-rm /mnt/etc/nixos/configuration.nix
-ln -s /home/nixos/public/vultr/config/flake.nix /mnt/etc/nixos/flake.nix
+# Clone to user account and replace with flake config using the mounted paths

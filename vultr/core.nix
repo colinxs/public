@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ /etc/nixos/hardware-configuration.nix ];
-
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/vda";
@@ -53,6 +51,6 @@
     # Networking
     nmap
     iftop
-    gitAndTools.gh # GitHub CLI
+    git
   ];
 }
