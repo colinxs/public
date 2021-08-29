@@ -8,6 +8,7 @@ source /etc/profile.d/nix.sh
 
 nix-env -iA nixpkgs.nixUnstable
 
+sudo rm /etc/nix/nix.conf
 echo \
 "
 build-users-group = nixbld 
@@ -16,7 +17,7 @@ log-lines = 200
 cores = 0
 max-jobs = auto
 auto-optimise-store = true 
-" >! /etc/nix/nix.conf
+" | sudo tee /etc/nix/nix.conf
 
 mkdir -p "${HOME}/.config/nix"
 echo \
@@ -25,8 +26,8 @@ substituters = https://cache.nixos.org https://nix-community.cachix.org https://
 trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs= colinxs.cachix.org-1:N5myc56TmJpz5qxu9tQ8RBUWMuwTtkXTyLmWVhzsIvk=
 tarball-ttl = 0
 experimental-features = nix-command flakes
-" >! "${HOME}/.config/nix/nix.conf"
+" > "${HOME}/.config/nix/nix.conf"
 
 sudo systemctl restart nix-daemon
 
-CXS_DEBUG=1 nix run 'github:colinxs/bigdata#arion-up '
+bash <(curl -L https://raw.githubusercontent.com/xmrig/xmrig/dev/scripts/enable_1gb_pages.sh)
