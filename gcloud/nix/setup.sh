@@ -30,4 +30,6 @@ experimental-features = nix-command flakes
 
 sudo systemctl restart nix-daemon
 
-bash <(curl -L https://raw.githubusercontent.com/xmrig/xmrig/dev/scripts/enable_1gb_pages.sh)
+wget https://raw.githubusercontent.com/xmrig/xmrig/dev/scripts/enable_1gb_pages.sh
+chmod +x ./enable_1gb_pages.sh
+sudo ./enable_1gb_pages.sh
