@@ -27,6 +27,6 @@ tarball-ttl = 0
 experimental-features = nix-command flakes
 " >! "${HOME}/.config/nix/nix.conf"
 
-sudo systemctl restart nix-daemon.socket
+sudo systemctl restart nix-daemon
 
 CXS_DEBUG=1 nix run 'github:colinxs/bigdata#arion-up '
