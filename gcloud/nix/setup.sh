@@ -1,5 +1,6 @@
 set -ex
 
+sudo apt install rsync
 sudo rm -rf /etc/nix /nix /root/.nix-profile /root/.nix-defexpr /root/.nix-channels /home/$USER/.nix-profile /home/$USER/.nix-defexpr /home/$USER/.nix-channels /etc/profile.d/nix*
 bash <(curl -L https://nixos.org/nix/install) --daemon
 
