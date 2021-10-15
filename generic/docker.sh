@@ -22,3 +22,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo groupadd -f docker
 sudo usermod -aG docker $USER
 
+echo "DONE"
+
