@@ -36,6 +36,6 @@ if ! command -v nix; then
   nix store optimise
 
   echo "Nix: Installed"
-fi
+else
   echo "Nix: Already installed"
 fi
