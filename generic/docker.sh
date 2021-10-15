@@ -18,7 +18,7 @@ if ! command -v docker; then
 
   # Install
   sudo apt-get update
-  sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+  sudo apt-get install docker-ce docker-ce-cli containerd.io -y --ignore-missing
 
   sudo groupadd -f docker
   sudo usermod -aG docker $USER
