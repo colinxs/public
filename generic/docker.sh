@@ -2,7 +2,9 @@
 
 if ! command -v docker; then
   # Older versions of Docker were called docker, docker.io, or docker-engine. If these are installed, uninstall them:
-  sudo apt purge docker docker-engine docker.io containerd runc -y --ignore-missing
+  for pkg in docker docker-engine docker.io containerd runc; do
+    sudo apt purge -y --ignore-missing "$pkg" || true
+  done
 
   # Update the apt package index and install packages to allow apt to use a repository over HTTPS:
   sudo apt update

@@ -1,5 +1,3 @@
-set -ex
-
 if ! command -v nix; then
   sudo apt install rsync
 
