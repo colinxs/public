@@ -1,7 +1,8 @@
-set -ex
 sudo apt update
 sudo apt install msr-tools vim git -y
 git -C ~/public pull || git clone https://github.com/colinxs/public.git ~/public
+
+set -ex
 . ~/public/generic/nix.sh
 . ~/public/generic/docker.sh
 . ~/public/generic/kernel.sh
