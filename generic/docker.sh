@@ -2,11 +2,11 @@
 
 if ! command -v docker; then
   # Older versions of Docker were called docker, docker.io, or docker-engine. If these are installed, uninstall them:
-  sudo apt-get remove docker docker-engine docker.io containerd runc -y
+  sudo apt purge docker docker-engine docker.io containerd runc -y --ignore-missing
 
   # Update the apt package index and install packages to allow apt to use a repository over HTTPS:
-  sudo apt-get update
-  sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
+  sudo apt update
+  sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y
 
   # Add Docker’s official GPG key:
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg -y --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -17,8 +17,8 @@ if ! command -v docker; then
     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
   # Install
-  sudo apt-get update
-  sudo apt-get install docker-ce docker-ce-cli containerd.io -y --ignore-missing
+  sudo apt update
+  sudo apt install docker-ce docker-ce-cli containerd.io -y --ignore-missing
 
   sudo groupadd -f docker
   sudo usermod -aG docker $USER
