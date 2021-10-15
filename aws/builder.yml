@@ -1,0 +1,17 @@
+name: SetupBigData
+schemaVersion: 1.0
+
+phases:
+  - name: build
+    steps:
+      - name: SetupBigData
+        action: ExecuteBash
+        inputs:
+          commands:
+            - sudo apt update
+            - sudo apt install vim linux-aws-edge git -y
+            - git clone https://github.com/colinxs/public.git ~/public
+            - ~/public/generic/nix.sh
+            - ~/public/generic/kernel.sh
+            - sudo apt-get clean
+            - sudo shutdown -r now
