@@ -34,7 +34,19 @@ install() {
 }
 
 remove() {
-  sudo rm -rf /etc/profile/nix.sh /etc/profile.d/nix.sh.backup-before-nix /etc/nix /nix ~root/.nix-profile ~root/.nix-defexpr ~root/.nix-channels ~/.nix-profile ~/.nix-defexpr ~/.nix-channels
+  sudo rm -rf \
+      /etc/profile/nix.sh \
+      /etc/profile/nix.sh.backup-before-nix \
+      /etc/profile.d/nix.sh \
+      /etc/profile.d/nix.sh.backup-before-nix \
+      /etc/nix \
+      /nix \
+      ~root/.nix-profile \
+      ~root/.nix-defexpr \
+      ~root/.nix-channels \
+      ~/.nix-profile \
+      ~/.nix-defexpr \
+      ~/.nix-channels
 
   # If you are on Linux with systemd, you will need to run:
   sudo systemctl stop nix-daemon.socket
