@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 PARAMS="mitigations=off hugepagesz=1GB hugepages=3 hugepagesz=2MB hugepages=8"
 PATH=/etc/default/grub.d/50-cloudimg-settings.cfg
 
