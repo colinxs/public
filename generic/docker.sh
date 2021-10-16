@@ -19,7 +19,7 @@ install() {
   sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y
 
   # Add Docker’s official GPG key:
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg -y --dearmor -o "$GPG_KEY_PATH"
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o "$GPG_KEY_PATH"
   
   # Use the following command to set up the stable repository
   echo \
