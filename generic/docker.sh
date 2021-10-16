@@ -6,8 +6,8 @@ GPG_KEY_PATH="/usr/share/keyrings/docker-archive-keyring.gpg"
 APT_SOURCE_PATH="/etc/apt/sources.list.d/docker.list"
 
 install() {
-  rm -f "$GPG_KEY_PATH"
-  rm -f "$APT_SOURCE_PATH"
+  sudo rm -f "$GPG_KEY_PATH"
+  sudo rm -f "$APT_SOURCE_PATH"
 
   # Older versions of Docker were called docker, docker.io, or docker-engine. If these are installed, uninstall them:
   for pkg in docker docker-engine docker.io containerd runc; do

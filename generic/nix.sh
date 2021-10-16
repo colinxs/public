@@ -5,6 +5,10 @@ set -ex
 DIR="$(dirname "$(realpath "$0")")"
 
 install() {
+  if [ -f /etc/profile.d/nix.sh ]; then
+    . /etc/profile.d/nix.sh
+  fi
+
   sudo apt install -y rsync
   yes | curl -L https://nixos.org/nix/install | sh -s -- --daemon
 
