@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -ex
+
 GPG_KEY_PATH="/usr/share/keyrings/docker-archive-keyring.gpg"
 APT_SOURCE_PATH="/etc/apt/sources.list.d/docker.list"
 
@@ -46,14 +48,14 @@ remove() {
 }
 
 if [ "$1" = "install" ]; then
-  # install
+  install
   echo "Docker: Installed"
 elif [ "$1" = "remove" ]; then 
-  # remove
+  remove
   echo "Docker: Removed"
 elif command -v docker; then
   echo "Docker: Already installed"
 else
-  # install
+  install
   echo "Docker: Autoinstalling"
 fi

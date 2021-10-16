@@ -1,11 +1,12 @@
-if ! command -v nix; then
-  sudo apt install rsync
+#!/usr/bin/env bash 
 
-  sudo rm -rf /etc/nix /nix /root/.nix-profile /root/.nix-defexpr /root/.nix-channels /home/$USER/.nix-profile /home/$USER/.nix-defexpr /home/$USER/.nix-channels /etc/profile.d/nix*
+set -ex
 
-  yes | bash <(curl -L https://nixos.org/nix/install) --daemon
+DIR="$(dirname "$(realpath "$0")")"
 
-  source /etc/profile.d/nix.sh
+install() {
+  sudo apt install -y rsync
+  yes | curl -L https://nixos.org/nix/install | sh -s -- --daemon
 
   nix-env -iA nixpkgs.nixUnstable
 
@@ -32,8 +33,28 @@ if ! command -v nix; then
   sudo systemctl restart nix-daemon
 
   nix store optimise
+}
 
+remove() {
+  sudo rm -rf /etc/profile/nix.sh /etc/nix /nix ~root/.nix-profile ~root/.nix-defexpr ~root/.nix-channels ~/.nix-profile ~/.nix-defexpr ~/.nix-channels
+
+  # If you are on Linux with systemd, you will need to run:
+  sudo systemctl stop nix-daemon.socket
+  sudo systemctl stop nix-daemon.service
+  sudo systemctl disable nix-daemon.socket
+  sudo systemctl disable nix-daemon.service
+  sudo systemctl daemon-reload
+}
+
+if [ "$1" = "install" ]; then
+  install
   echo "Nix: Installed"
-else
+elif [ "$1" = "remove" ]; then 
+  remove
+  echo "Nix: Removed"
+elif command -v nix; then
   echo "Nix: Already installed"
+else
+  install
+  echo "Nix: Autoinstalling"
 fi

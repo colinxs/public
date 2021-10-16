@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install msr-tools vim git -y
+sudo apt install coreutils msr-tools vim git -y
 git -C ~/public pull || git clone https://github.com/colinxs/public.git ~/public
 
 set -ex
