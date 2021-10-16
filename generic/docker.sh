@@ -40,11 +40,11 @@ remove() {
     sudo apt purge -y --ignore-missing "$pkg" || true
   done
 
-  rm -f "$GPG_KEY_PATH"
-  rm -f "$APT_SOURCE_PATH"
+  sudo rm -f "$GPG_KEY_PATH"
+  sudo rm -f "$APT_SOURCE_PATH"
 
-  gpasswd -d "$USER" docker || true
-  groupdel docker || true
+  sudo gpasswd -d "$USER" docker || true
+  sudo groupdel docker || true
 }
 
 if [ "$1" = "install" ]; then
