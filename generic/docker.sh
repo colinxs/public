@@ -53,7 +53,7 @@ if [ "$1" = "install" ]; then
 elif [ "$1" = "remove" ]; then 
   remove >&2
   echo "Docker: Removed" >&2
-elif command -v docker; then
+elif command -v docker > /dev/null 2>&1; then
   echo "Docker: Already installed" >&2
 else
   install >&2

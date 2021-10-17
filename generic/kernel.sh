@@ -19,7 +19,7 @@ if [ "$1" = "install" ]; then
 elif [ "$1" = "remove" ]; then 
   remove >&2
   echo "Kernel: Removed" >&2
-elif ! grep "$PARAMS" "$PATH"; then
+elif ! grep "$PARAMS" "$PATH" > /dev/null; then
   echo "Kernel: Already installed" >&2
 else
   install >&2
