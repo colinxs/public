@@ -14,14 +14,14 @@ remove() {
 }
 
 if [ "$1" = "install" ]; then
-  install
-  echo "Kernel: Installed"
+  install >&2
+  echo "Kernel: Installed" >&2
 elif [ "$1" = "remove" ]; then 
-  remove
-  echo "Kernel: Removed"
+  remove >&2
+  echo "Kernel: Removed" >&2
 elif ! grep "$PARAMS" "$PATH"; then
-  echo "Kernel: Already installed"
+  echo "Kernel: Already installed" >&2
 else
-  install
-  echo "Kernel: Autoinstalling"
+  install >&2
+  echo "Kernel: Autoinstalling" >&2
 fi

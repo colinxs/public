@@ -2,11 +2,11 @@
 
 DIR="$(dirname "$(realpath "$0")")"
 
-source-init() {
+find-init() {
   if [ -f /etc/profile.d/nix.sh ]; then
-    . /etc/profile.d/nix.sh
+    echo /etc/profile.d/nix.sh
   else
-    . /etc/profile/nix.sh
+    echo /etc/profile/nix.sh
   fi
 }
 
@@ -40,7 +40,7 @@ install() {
 
   nix store optimise
   
-  source-init
+  source "$(find-init)"
 }
 
 remove() {
@@ -66,16 +66,19 @@ remove() {
   sudo systemctl daemon-reload
 }
 
-source-init
+source "$(find-init)"
 if [ "$1" = "install" ]; then
-  install
-  echo "Nix: Installed"
+  install >&2
+  echo "Nix: Installed" >&2
+  find-init
 elif [ "$1" = "remove" ]; then 
-  remove
-  echo "Nix: Removed"
+  remove >&2
+  echo "Nix: Removed" >&2
+  find-init
 elif command -v nix; then
-  echo "Nix: Already installed"
+  echo "Nix: Already installed" >&2
 else
-  install
-  echo "Nix: Autoinstalling"
+  install >&2
+  echo "Nix: Autoinstalled" >&2
+  find-init
 fi

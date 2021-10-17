@@ -48,14 +48,14 @@ remove() {
 }
 
 if [ "$1" = "install" ]; then
-  install
-  echo "Docker: Installed"
+  install >&2
+  echo "Docker: Installed" >&2
 elif [ "$1" = "remove" ]; then 
-  remove
-  echo "Docker: Removed"
+  remove >&2
+  echo "Docker: Removed" >&2
 elif command -v docker; then
-  echo "Docker: Already installed"
+  echo "Docker: Already installed" >&2
 else
-  install
-  echo "Docker: Autoinstalling"
+  install >&2
+  echo "Docker: Autoinstalling" >&2
 fi
