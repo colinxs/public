@@ -13,6 +13,7 @@ remove() {
   echo "Kernel: Cannot remove"
 }
 
+sudo apt install grep >&2
 if [ "$1" = "install" ]; then
   install >&2
   echo "Kernel: Installed" >&2
