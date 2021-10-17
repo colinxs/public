@@ -57,5 +57,5 @@ elif command -v docker > /dev/null 2>&1; then
   echo "Docker: Already installed" >&2
 else
   install >&2
-  echo "Docker: Autoinstalling" >&2
+  echo "Docker: Autoinstalled" >&2
 fi

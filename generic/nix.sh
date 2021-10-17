@@ -13,6 +13,7 @@ find-init() {
 install() {
   sudo apt install -y rsync
   yes | curl -L https://nixos.org/nix/install | sh -s -- --daemon
+  source "$(find-init)"
 
   sudo rm /etc/nix/nix.conf
   echo \
@@ -42,8 +43,6 @@ install() {
   nix-env -iA nixpkgs.nix_2_4 || nix-env -iA nixpkgs.nixUnstable
 
   nix store optimise
-  
-  source "$(find-init)"
 }
 
 remove() {
