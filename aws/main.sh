@@ -11,7 +11,7 @@ eval "$(~/public/generic/kernel.sh)"
 
 # TODO
 if ! apt list --installed | grep "linux-aws-edge"; then
-    sudo apt install linux-aws-edge
+    sudo apt install linux-aws-edge -y
     sudo shutdown -r now
 fi
 
