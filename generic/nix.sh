@@ -69,19 +69,23 @@ remove() {
   sudo systemctl daemon-reload
 }
 
+finish() {
+  echo "source $(find-init)"
+}
+
 source "$(find-init)" >&2
 if [ "$1" = "install" ]; then
   install >&2
   echo "Nix: Installed" >&2
-  find-init
+  finish
 elif [ "$1" = "remove" ]; then 
   remove >&2
   echo "Nix: Removed" >&2
 elif command -v nix >/dev/null 2>&1; then
   echo "Nix: Already installed" >&2
-  find-init
+  finish
 else
   install >&2
   echo "Nix: Autoinstalled" >&2
-  find-init
+  finish
 fi
