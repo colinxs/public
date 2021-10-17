@@ -6,7 +6,6 @@ PATH="/etc/default/grub.d/50-cloudimg-settings.cfg"
 install() {
   sudo sed -i "s/GRUB_CMDLINE_LINUX_DEFAULT=\"\(.*\)*\"/GRUB_CMDLINE_LINUX_DEFAULT=\"\1 $PARAMS\"/g" 
   sudo update-grub
-  echo "Kernel: Installed"
 }
 
 remove() {
