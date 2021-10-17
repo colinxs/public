@@ -2,6 +2,14 @@
 
 DIR="$(dirname "$(realpath "$0")")"
 
+source-init() {
+  if [ -f /etc/profile.d/nix.sh ]; then
+    . /etc/profile.d/nix.sh
+  else
+    . /etc/profile/nix.sh
+  fi
+}
+
 install() {
   sudo apt install -y rsync
   yes | curl -L https://nixos.org/nix/install | sh -s -- --daemon
@@ -31,6 +39,8 @@ install() {
   sudo systemctl restart nix-daemon
 
   nix store optimise
+  
+  source-init
 }
 
 remove() {
@@ -56,12 +66,7 @@ remove() {
   sudo systemctl daemon-reload
 }
 
-if [ -f /etc/profile.d/nix.sh ]; then
-  . /etc/profile.d/nix.sh
-else
-  . /etc/profile/nix.sh
-fi
-
+source-init
 if [ "$1" = "install" ]; then
   install
   echo "Nix: Installed"

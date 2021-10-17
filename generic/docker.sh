@@ -39,7 +39,7 @@ remove() {
   for pkg in docker-ce docker-ce-cli containerd.io; do
     sudo apt purge -y --ignore-missing "$pkg" || true
   done
-
+  
   sudo rm -f "$GPG_KEY_PATH"
   sudo rm -f "$APT_SOURCE_PATH"
 
