@@ -24,7 +24,7 @@ install() {
   cores = 0
   max-jobs = auto
   auto-optimise-store = true 
-  " | sudo tee /etc/nix/nix.conf
+  " | sudo tee /etc/nix/nix.conf > /dev/null
 
   mkdir -p "${HOME}/.config/nix"
   echo \
