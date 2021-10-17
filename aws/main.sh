@@ -6,7 +6,6 @@ sudo apt install coreutils msr-tools vim git -y
 git -C ~/public pull || git clone https://github.com/colinxs/public.git ~/public
 
 source "$(~/public/generic/nix.sh)"
-nix-env -iA nixpkgs.nix_2_4 || nix-env -iA nixpkgs.nixUnstable
 
 source "$(~/public/generic/docker.sh)"
 

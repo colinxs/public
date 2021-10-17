@@ -14,8 +14,6 @@ install() {
   sudo apt install -y rsync
   yes | curl -L https://nixos.org/nix/install | sh -s -- --daemon
 
-  nix-env -iA nixpkgs.nixUnstable
-
   sudo rm /etc/nix/nix.conf
   echo \
   "
@@ -37,6 +35,11 @@ install() {
   " > "${HOME}/.config/nix/nix.conf"
 
   sudo systemctl restart nix-daemon
+  
+  nix-channel --add https://nixos.org/channels/nixos-unstable
+  nix-channel --update
+
+  nix-env -iA nixpkgs.nix_2_4 || nix-env -iA nixpkgs.nixUnstable
 
   nix store optimise
   
