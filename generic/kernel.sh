@@ -4,7 +4,7 @@ PARAMS="mitigations=off hugepagesz=1GB hugepages=3 hugepagesz=2MB hugepages=8"
 GRUB_PATH="/etc/default/grub.d/50-cloudimg-settings.cfg"
 
 install() {
-  sudo sed -i "s/GRUB_CMDLINE_LINUX_DEFAULT=\"\(.*\)*\"/GRUB_CMDLINE_LINUX_DEFAULT=\"\1 $PARAMS\"/g" 
+  sudo sed -i "s/GRUB_CMDLINE_LINUX_DEFAULT=\"\(.*\)*\"/GRUB_CMDLINE_LINUX_DEFAULT=\"\1 $PARAMS\"/g" "$GRUB_PATH"
   sudo update-grub
 }
 
@@ -19,7 +19,7 @@ if [ "$1" = "install" ]; then
 elif [ "$1" = "remove" ]; then 
   remove >&2
   echo "Kernel: Removed" >&2
-elif grep "$PARAMS" "$PATH" > /dev/null; then
+elif grep "$PARAMS" "$GRUB_PATH" > /dev/null; then
   echo "Kernel: Already installed" >&2
 else
   install >&2
