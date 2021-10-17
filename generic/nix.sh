@@ -58,6 +58,8 @@ remove() {
 
 if [ -f /etc/profile.d/nix.sh ]; then
   . /etc/profile.d/nix.sh
+else
+  . /etc/profile/nix.sh
 fi
 
 if [ "$1" = "install" ]; then
