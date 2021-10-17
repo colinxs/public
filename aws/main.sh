@@ -8,9 +8,9 @@ git -C ~/public pull || git clone https://github.com/colinxs/public.git ~/public
 source "$(~/public/generic/nix.sh)"
 nix-env -iA nixpkgs.nix_2_4 || nix-env -iA nixpkgs.nixUnstable
 
-~/public/generic/docker.sh 
+source "$(~/public/generic/docker.sh)"
 
-~/public/generic/kernel.sh
+source "$(~/public/generic/kernel.sh)"
 
 # TODO
 # if ! apt list --installed | grep "linux-aws-edge"; then
