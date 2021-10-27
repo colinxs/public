@@ -7,8 +7,8 @@ sudo tee "$RUN_SCRIPT" > /dev/null <<EOF
 export CXS_DEBUG=1
 export MACHINE=aws1
 export HOME=/home/ubuntu/
-docker container ps -qa | xargs docker container stop
-docker container ps -qa | xargs docker container rm
+docker container ps -qa | xargs docker container stop || true
+docker container ps -qa | xargs docker container rm || true
 . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 $(command -v nix) run 'github:colinxs/bigdata#main'
 EOF
