@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+GITHUB_TOKEN=""
+export GITHUB_TOKEN
+
 set -ex
 set +o noclobber
 
