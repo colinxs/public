@@ -1,6 +1,16 @@
 #!/usr/bin/env bash
 
-PARAMS="mitigations=off hugepagesz=1GB hugepages=3 hugepagesz=2MB hugepages=8"
+shopt -s nullglob 
+
+NR_HUGEPAGES_PER_NODE=1280
+NR_1GB_PER_NODE=3
+
+nodes=(/sys/devices/system/node/node*)
+nnodes=''${#nodes[@]}
+(( nr_1gbpages=nnodes * NR_1GB_PER_NODE ))
+(( nr_hugepages=nnodes * NR_HUGEPAGES_PER_NODE ))
+
+PARAMS="mitigations=off hugepagesz=1GB hugepages=${nr_1gbpages} hugepagesz=2MB hugepages=${nr_hugepages}"
 GRUB_PATH="/etc/default/grub.d/50-cloudimg-settings.cfg"
 
 install() {
