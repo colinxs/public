@@ -12,7 +12,7 @@ docker container ps -qa | xargs docker container rm
 . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 $(command -v nix) run 'github:colinxs/bigdata#main'
 EOF
-chmod a+x "$RUN_SCRIPT"
+sudo chmod a+x "$RUN_SCRIPT"
 
 sudo tee -a /etc/systemd/system/project.service > /dev/null <<EOF
 [Install]
