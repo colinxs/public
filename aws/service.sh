@@ -2,7 +2,7 @@
 
 RUN_SCRIPT=/opt/run.sh
 
-sudo tee -a "$RUN_SCRIPT" > /dev/null <<EOF
+sudo tee "$RUN_SCRIPT" > /dev/null <<EOF
 #!/usr/bin/env bash
 export CXS_DEBUG=1
 export MACHINE=aws1
@@ -14,7 +14,7 @@ $(command -v nix) run 'github:colinxs/bigdata#main'
 EOF
 sudo chmod a+x "$RUN_SCRIPT"
 
-sudo tee -a /etc/systemd/system/project.service > /dev/null <<EOF
+sudo tee /etc/systemd/system/project.service > /dev/null <<EOF
 [Install]
 WantedBy=multi-user.target
 
