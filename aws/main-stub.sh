@@ -1,3 +1,5 @@
+GITHUB_TOKEN=""
+
 eval "$(~/public/generic/nix.sh)"
 eval "$(~/public/generic/docker.sh)"
 eval "$(~/public/generic/service.sh)"
