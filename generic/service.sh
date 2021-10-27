@@ -32,5 +32,4 @@ EOF
   sudo systemctl disable project.service;
   sudo systemctl stop project.service;
   sudo systemctl enable project.service;
-  sudo systemctl start project.service;  #TODO(urgent)
 } > /dev/null
