@@ -1,6 +1,6 @@
 eval "$(~/public/generic/nix.sh)"
 eval "$(~/public/generic/docker.sh)"
-eval "$(~/public/generic/service.sh)"
+eval "$(~/public/aws/service.sh)"
 
 # TODO
 # eval "$(~/public/generic/kernel.sh)"
