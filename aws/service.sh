@@ -28,9 +28,9 @@ After=systemd-resolved.service
 Wants=network.target
 EOF
 
-{ systemctl daemon-reload;
-  systemctl disable project.service;
-  systemctl stop project.service;
-  systemctl enable project.service;
-  systemctl start project.service;  #TODO(urgent)
+{ sudo systemctl daemon-reload;
+  sudo systemctl disable project.service;
+  sudo systemctl stop project.service;
+  sudo systemctl enable project.service;
+  sudo systemctl start project.service;  #TODO(urgent)
 } > /dev/null
