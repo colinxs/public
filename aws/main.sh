@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 set +o noclobber
+set -e
 
-script="$(mktemp)"
+script=/tmp/init.sh
+
 sudo tee "$script" > /dev/null <<EOF
 export HOME=/home/ubuntu
 
@@ -22,5 +24,8 @@ sudo apt install coreutils msr-tools vim git -y
 git -C ~/public pull || git clone https://github.com/colinxs/public.git ~/public
 . ~/public/aws/main-stub.sh
 EOF
+
+sudo chmod a+w "$script"
+sudo chmod a+x "$script"
 
 sudo -i -u ubuntu bash "$script"
