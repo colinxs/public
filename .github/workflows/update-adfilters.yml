@@ -2,8 +2,9 @@
 name: Update adblock filters and whitelists 
 
 on:
+  push:
   schedule:
-    - cron: '@daily'
+    - cron: '0 0 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
