@@ -80,6 +80,9 @@ elif BUILD.is_file():
 
 BUILD.mkdir()
 
+valid = list(valid)
+valid.sort()
+
 with open(UBLOCK, 'w', encoding="utf-8") as f:
     f.write('! Title: Personal Whitelist (Combined)\n')
     for domain in valid:
