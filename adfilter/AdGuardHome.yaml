@@ -14,10 +14,10 @@ dns:
   bind_hosts:
   - 0.0.0.0
   port: 53
-  statistics_interval: 90
+  statistics_interval: 30
   querylog_enabled: true
   querylog_file_enabled: true
-  querylog_interval: 2160h
+  querylog_interval: 720h
   querylog_size_memory: 1000
   anonymize_client_ip: false
   protection_enabled: true
@@ -58,7 +58,7 @@ dns:
   max_goroutines: 300
   ipset: []
   filtering_enabled: true
-  filters_update_interval: 12
+  filters_update_interval: 1
   parental_enabled: false
   safesearch_enabled: false
   safebrowsing_enabled: false
@@ -115,18 +115,14 @@ filters:
   name: 1Hosts (mini)
   id: 1652343781
 - enabled: true
-  url: https://raw.githubusercontent.com/colinxs/snippets/main/adfilter/whitelist/build/adguard.txt
-  name: Personal Whitelist
-  id: 1652343782
-- enabled: true
   url: https://filters.adtidy.org/extension/chromium/filters/10.txt
   name: AdGuard Filter unblocking search ads and self-promotion
   id: 1652343783
-whitelist_filters:
-- enabled: false
-  url: https://raw.githubusercontent.com/colinxs/snippets/main/adfilter/whitelist.txt
-  name: personal
-  id: 1652343773
+- enabled: true
+  url: https://raw.githubusercontent.com/colinxs/public/master/adfilter/whitelist/build/adguard.txt
+  name: Personal Whitelist
+  id: 1652343784
+whitelist_filters: []
 user_rules:
 - ""
 dhcp:
