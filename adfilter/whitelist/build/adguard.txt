@@ -1,3 +1,8 @@
+! Title: Personal Whitelist (Combined)
+@@||0-edge-chat.facebook.com$document
+@@||0.client-channel.google.com$document
+@@||1-edge-chat.facebook.com$document
+@@||1drv.com$document
 @@||2-edge-chat.facebook.com$document
 @@||2.android.pool.ntp.org$document
 @@||2ip.ua$document
