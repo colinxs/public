@@ -10,8 +10,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: Update whitelists 
         # Hit the webhook endpoint to rebuild  from the "main" branch
         run: |
           (cd adfilter/whitelist && ./generate.py)
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update ad filters 
 
