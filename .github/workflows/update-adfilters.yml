@@ -1,5 +1,5 @@
 # .github/workflows/scheduled-builds.yml
-name: Update adblock filters and whitelists 
+name: UpdateAdblock 
 
 on:
   push:
