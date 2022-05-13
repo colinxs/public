@@ -2,6 +2,7 @@
 name: UpdateAdblock 
 
 on:
+  workflow_dispatch:
   push:
   schedule:
     - cron: '0 0 * * *'
