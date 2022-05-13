@@ -1,0 +1,15 @@
+# .github/workflows/scheduled-builds.yml
+name: Update adblock filters and whitelists 
+
+on:
+  schedule:
+    - cron: '@daily'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update whitelists 
+        # Hit the webhook endpoint to rebuild  from the "main" branch
+        run: |
+          (cd adfilter/whitelist && ./generate.py)
+
