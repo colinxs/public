@@ -2,8 +2,9 @@ bind_host: 0.0.0.0
 bind_port: 3000
 beta_bind_port: 0
 users:
-- name: colinxs
-  password: $2a$10$vJ0OPH1BB09.IsP0EatiCOXoVgaszvk1U1X6lzvz1fnxVpevlKF32
+- name: root 
+  password: 2y$05$S/UIqSmkJvjdxs9hSwdxDOAnNG.Y/VuTaPnGKoAru1WRiRKD5B1xS
+
 auth_attempts: 5
 block_auth_min: 15
 http_proxy: ""

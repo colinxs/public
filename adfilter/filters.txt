@@ -94,9 +94,9 @@ https://abp.oisd.nl/basic/
 ===
 
 # 1Hosts (mini)
-https://o0.pages.dev/mini/adblock.txt
-===
-===
+# https://o0.pages.dev/mini/adblock.txt
+# ===
+# ===
 
 # AdGuard Filter unblocking search ads and self-promotion
 https://filters.adtidy.org/extension/ublock/filters/10.txt
@@ -113,4 +113,4 @@ https://raw.githubusercontent.com/colinxs/snippets/main/adfilter/whitelist/build
 ####
 
 https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
+# https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt

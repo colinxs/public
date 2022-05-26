@@ -13,6 +13,7 @@ EXTERNAL = SCRIPT.joinpath('external.txt')
 
 DOMAINS = BUILD.joinpath('domains.txt')
 ADGUARD = BUILD.joinpath('adguard.txt')
+ADGUARD_HOME = BUILD.joinpath('adguard_home.txt')
 UBLOCK = BUILD.joinpath('ublock.txt')
 
 DOMAIN_PATTERN = re.compile(r'^((([a-zA-Z0-9\*]|[a-zA-Z0-9\*][a-zA-Z0-9\-\*]*[a-zA-Z0-9\*])\.)*([A-Za-z0-9\*]|[A-Za-z0-9\*][A-Za-z0-9\-\*]*[A-Za-z0-9\*]))$')
@@ -93,6 +94,12 @@ with open(ADGUARD, 'w', encoding="utf-8") as f:
     f.write('! Title: Personal Whitelist (Combined)\n')
     for domain in valid:
         f.write(f'@@||{domain}$document')
+        f.write('\n')
+
+with open(ADGUARD_HOME, 'w', encoding="utf-8") as f:
+    f.write('! Title: Personal Whitelist (Combined)\n')
+    for domain in valid:
+        f.write(f'@@||{domain}$important')
         f.write('\n')
 
 with open(DOMAINS, 'w', encoding="utf-8") as f:
