@@ -26,6 +26,7 @@ ad.atdmt.com
 ad.doubleclick.net
 ad.nwi.jp
 adc.api.nine.com.au
+adclick.g.doubleclick.net
 adcr.naver.com
 adf.ly
 adfoc.us
@@ -568,6 +569,7 @@ geo-prod.do.dsp.mp.microsoft.com
 geo.ngtv.io
 geo3.ggpht.com
 georiot.com
+geotrust.com
 getdrip.com
 gfwsl.geforce.com
 giphy.com

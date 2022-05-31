@@ -26,6 +26,7 @@
 @@||ad.doubleclick.net$document
 @@||ad.nwi.jp$document
 @@||adc.api.nine.com.au$document
+@@||adclick.g.doubleclick.net$document
 @@||adcr.naver.com$document
 @@||adf.ly$document
 @@||adfoc.us$document
@@ -568,6 +569,7 @@
 @@||geo.ngtv.io$document
 @@||geo3.ggpht.com$document
 @@||georiot.com$document
+@@||geotrust.com$document
 @@||getdrip.com$document
 @@||gfwsl.geforce.com$document
 @@||giphy.com$document
