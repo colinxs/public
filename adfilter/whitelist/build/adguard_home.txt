@@ -341,6 +341,7 @@
 @@||awstrack.me$important
 @@||ax.phobos.apple.com.edgesuite.net$important
 @@||bamgrid.com$important
+@@||bannerconnect.com$important
 @@||bat.bing.com$important
 @@||be-go.kelkoogroup.net$important
 @@||bfast.com$important

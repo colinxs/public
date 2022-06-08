@@ -341,6 +341,7 @@
 @@||awstrack.me$document
 @@||ax.phobos.apple.com.edgesuite.net$document
 @@||bamgrid.com$document
+@@||bannerconnect.com$document
 @@||bat.bing.com$document
 @@||be-go.kelkoogroup.net$document
 @@||bfast.com$document
