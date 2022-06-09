@@ -118,6 +118,10 @@ filters:
   url: https://raw.githubusercontent.com/colinxs/public/master/adfilter/whitelist/build/adguard_home.txt
   name: Personal Whitelist
   id: 1653818375
+- enabled: true
+  url: https://o0.pages.dev/mini/adblock.txt
+  name: 1Hosts (mini)
+  id: 1653818376
 whitelist_filters: []
 user_rules: []
 dhcp:
