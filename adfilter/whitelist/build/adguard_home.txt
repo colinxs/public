@@ -341,6 +341,7 @@
 @@||awstrack.me$important
 @@||ax.phobos.apple.com.edgesuite.net$important
 @@||bamgrid.com$important
+@@||bannerconnect.com$important
 @@||bat.bing.com$important
 @@||be-go.kelkoogroup.net$important
 @@||bfast.com$important
@@ -497,6 +498,7 @@
 @@||e7065.e2.akamaiedge.net$important
 @@||ea.galerieslafayette.com$important
 @@||easylist.club$important
+@@||easysol.net$important
 @@||eboundservices.com$important
 @@||ec-ns.sascdn.com$important
 @@||ecn.dev.virtualearth.net$important
@@ -1019,6 +1021,7 @@
 @@||uim.tifbs.net$important
 @@||uk-go.kelkoogroup.net$important
 @@||unagi-na.amazon.com$important
+@@||unpkg.com$important
 @@||upgrade.scdn.com$important
 @@||ups.ksmobile.net$important
 @@||uralweb.ru$important

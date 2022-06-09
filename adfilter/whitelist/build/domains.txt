@@ -341,6 +341,7 @@ avantlink.com
 awstrack.me
 ax.phobos.apple.com.edgesuite.net
 bamgrid.com
+bannerconnect.com
 bat.bing.com
 be-go.kelkoogroup.net
 bfast.com
@@ -497,6 +498,7 @@ e.reddit.com
 e7065.e2.akamaiedge.net
 ea.galerieslafayette.com
 easylist.club
+easysol.net
 eboundservices.com
 ec-ns.sascdn.com
 ecn.dev.virtualearth.net
@@ -1019,6 +1021,7 @@ ui.skype.com
 uim.tifbs.net
 uk-go.kelkoogroup.net
 unagi-na.amazon.com
+unpkg.com
 upgrade.scdn.com
 ups.ksmobile.net
 uralweb.ru
