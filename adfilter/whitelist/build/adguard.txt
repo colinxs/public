@@ -498,6 +498,7 @@
 @@||e7065.e2.akamaiedge.net$document
 @@||ea.galerieslafayette.com$document
 @@||easylist.club$document
+@@||easysol.net$document
 @@||eboundservices.com$document
 @@||ec-ns.sascdn.com$document
 @@||ecn.dev.virtualearth.net$document
@@ -1020,6 +1021,7 @@
 @@||uim.tifbs.net$document
 @@||uk-go.kelkoogroup.net$document
 @@||unagi-na.amazon.com$document
+@@||unpkg.com$document
 @@||upgrade.scdn.com$document
 @@||ups.ksmobile.net$document
 @@||uralweb.ru$document
