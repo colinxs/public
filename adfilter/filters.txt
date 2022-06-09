@@ -98,7 +98,7 @@ https://abp.oisd.nl/basic/
 # 1Hosts (mini)
 # https://o0.pages.dev/mini/adblock.txt
 # ===
-# ===
+===
 
 # AdGuard Filter unblocking search ads and self-promotion
 # https://filters.adtidy.org/extension/ublock/filters/10.txt
