@@ -442,9 +442,9 @@
 @@||ctldl.windowsupdate.com$document
 @@||cts.businesswire.com$document
 @@||custom.bnc.lt$document
+@@||customer.io$document
 @@||customlinks.appsflyer.com$document
 @@||customtraffic.impactradius.com$document
-@@||custumer.io$document
 @@||cws.conviva.com$document
 @@||cwtv-mrss-akamai.cwtv.com$document
 @@||cwtv-prod-elb.digitalsmiths.net$document
@@ -617,6 +617,7 @@
 @@||howsmyssl.com$document
 @@||href.li$document
 @@||hs.eloqua.com$document
+@@||hscoscdn20.net$document
 @@||hsdn.org$document
 @@||hu-go.kelkoogroup.net$document
 @@||hubspotemail.net$document

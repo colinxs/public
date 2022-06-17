@@ -442,9 +442,9 @@ ct.sendgrid.net
 ctldl.windowsupdate.com
 cts.businesswire.com
 custom.bnc.lt
+customer.io
 customlinks.appsflyer.com
 customtraffic.impactradius.com
-custumer.io
 cws.conviva.com
 cwtv-mrss-akamai.cwtv.com
 cwtv-prod-elb.digitalsmiths.net
@@ -617,6 +617,7 @@ hotdogsandads.com
 howsmyssl.com
 href.li
 hs.eloqua.com
+hscoscdn20.net
 hsdn.org
 hu-go.kelkoogroup.net
 hubspotemail.net
