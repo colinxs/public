@@ -668,6 +668,7 @@
 @@||kaptcha.com$document
 @@||keystone.mwbsys.com$document
 @@||kqzyfj.com$document
+@@||kumascans.com$document
 @@||lasagneandands.com$document
 @@||lastfm-img2.akamaized.net$document
 @@||licensing.xboxlive.com$document

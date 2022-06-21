@@ -668,6 +668,7 @@ k.cocooncenter.com
 kaptcha.com
 keystone.mwbsys.com
 kqzyfj.com
+kumascans.com
 lasagneandands.com
 lastfm-img2.akamaized.net
 licensing.xboxlive.com

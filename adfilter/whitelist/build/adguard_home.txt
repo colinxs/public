@@ -668,6 +668,7 @@
 @@||kaptcha.com$important
 @@||keystone.mwbsys.com$important
 @@||kqzyfj.com$important
+@@||kumascans.com$important
 @@||lasagneandands.com$important
 @@||lastfm-img2.akamaized.net$important
 @@||licensing.xboxlive.com$important
