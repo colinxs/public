@@ -11,10 +11,6 @@ in {
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05";
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   time.timeZone = "America/Denver";
 
   # Select internationalisation properties.
@@ -38,4 +34,20 @@ in {
   # accidentally delete configuration.nix.
   # TODO broken?
   # system.copySystemConfiguration = true;
+
+  nix = {
+    distributedBuilds = true;
+    buildMachines = [
+      {
+        hostName = "10.88.0.10";
+        system = "x86_64-linux";
+        maxJobs = 24;
+        speedFactor = 10;
+        supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
+      }
+    ];
+    extraOptions = ''
+      builders-use-substitutes = true
+    '';
+  };
 }

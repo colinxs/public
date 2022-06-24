@@ -5,8 +5,15 @@ with lib;
 
 let
   username = "admin";
+  sshKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPHG4Iv17xEVEAJCXebBgXYMuQTOF3Hz2Z7x2+JnXnAS Colin Summers <me@colinxsummers.com>";
 in
 {
+  users.users.root = {
+    openssh.authorizedKeys.keys  = [ 
+      sshKey
+    ]; 
+  };
+
   users.groups."${username}" = {
     gid = 1000;
   };
@@ -27,9 +34,11 @@ in
 
     hashedPassword = "$6$x2N83At2a4Tmny0F$oOGC0uwcuWtUDyI66qx9VXIhl2C90YHABxPOCXNIF3eiiynakwUwl6BiUIav8itlHZ59M77n5qxQdkSiF7Hah0"; # "admin"
     openssh.authorizedKeys.keys  = [ 
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPHG4Iv17xEVEAJCXebBgXYMuQTOF3Hz2Z7x2+JnXnAS Colin Summers <me@colinxsummers.com>"
+      sshKey
     ];
   };
+
+  nix.settings.trusted-users = [ "root" username ];
 }
 
 

@@ -6,12 +6,17 @@
 }:
 with builtins;
 with lib; let
-  nfsdPort = 2049; # tcp/udp (all linux)
-  rpcbindPort = 111; # tcp/udp (all linux)
-  mountdPort = 4000; # tcp/udp (varies)
-  statdPort = 4001; # tcp/udp (varies)
-  lockdPort = 4002; # tcp/udp (varies)
+  nfsdPort = 2049; # tcp/udp (IANA)
+  rpcbindPort = 111; # tcp/udp (IANA)
+  mountdPort = 20048; # tcp/udp (IANA)
+  rdmaPort = 20049; # tcp/udp (IANA)
+  statdPort = 20050; # tcp/udp (varies)
+  lockdPort = 20051; # tcp/udp (varies)
+  nfscbPort = 20052; # tcp/udp (varies)
 in {
+  boot.kernelParams = [
+    "nfs.callback_tcpport=${nfscbPort}"
+  ];
   services.nfs.server = {
     enable = true;
     inherit mountdPort statdPort lockdPort;
@@ -30,6 +35,6 @@ in {
     device = "/mnt/public";
     options = ["bind"];
   };
-  networking.firewall.allowedTCPPorts = [2049 111 mountdPort statdPort lockdPort];
-  networking.firewall.allowedUDPPorts = [2049 111 mountdPort statdPort lockdPort];
+  networking.firewall.allowedTCPPorts = [2049 111 mountdPort rdmaPort statdPort lockdPort nfscbPort ];
+  networking.firewall.allowedUDPPorts = [2049 111 mountdPort rdmaPort statdPort lockdPort nfscbPort ];
 }
