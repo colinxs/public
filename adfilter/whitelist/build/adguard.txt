@@ -839,6 +839,7 @@
 @@||pubsub.plex.tv$document
 @@||pulsar.ebay.com$document
 @@||pushbullet.com$document
+@@||pushpushgo.com$document
 @@||pvtag.yahoo.co.jp$document
 @@||qksrv.net$document
 @@||qualtrics.com$document
