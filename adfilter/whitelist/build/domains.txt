@@ -440,6 +440,7 @@ ct.impactradius.com
 ct.pinterest.com
 ct.sendgrid.net
 ctldl.windowsupdate.com
+ctrip.com
 cts.businesswire.com
 custom.bnc.lt
 customer.io
@@ -975,6 +976,7 @@ tanx.com
 target.georiot.com
 tawk.to
 tc.tradetracker.com
+team-rec.jp
 techtarget.com
 tedcdn.com
 telemetry.mozilla.org

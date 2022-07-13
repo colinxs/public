@@ -440,6 +440,7 @@
 @@||ct.pinterest.com$important
 @@||ct.sendgrid.net$important
 @@||ctldl.windowsupdate.com$important
+@@||ctrip.com$important
 @@||cts.businesswire.com$important
 @@||custom.bnc.lt$important
 @@||customer.io$important
@@ -975,6 +976,7 @@
 @@||target.georiot.com$important
 @@||tawk.to$important
 @@||tc.tradetracker.com$important
+@@||team-rec.jp$important
 @@||techtarget.com$important
 @@||tedcdn.com$important
 @@||telemetry.mozilla.org$important
