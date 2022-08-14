@@ -1,0 +1,45 @@
+{ self, inputs, config, ... }:
+
+with builtins;
+with inputs.nixlib.lib;
+
+let
+  inherit (inputs) digga;
+  util = self.lib;
+in
+{
+  hostDefaults = {
+    system = "x86_64-linux";
+    channelName = "nixos";
+    # NOTE: importExportableModules creates exportedModules
+    imports = [ 
+      (digga.lib.importExportableModules ./modules) 
+    ];
+    modules = [
+      { lib.m = self.lib; }
+      digga.nixosModules.bootstrapIso
+      digga.nixosModules.nixConfig
+      inputs.home-manager.nixosModules.home-manager
+      inputs.agenix.nixosModules.age
+      inputs.bud.nixosModules.bud
+    ];
+  };
+  hosts = {
+    NixOS = { };
+  };
+  imports = [ (digga.lib.importHosts ./hosts) ];
+  importables = rec {
+    profiles = digga.lib.rakeLeaves ./profiles // {
+      users = digga.lib.rakeLeaves ./users;
+    };
+    suites = with profiles; 
+    rec {
+      base = 
+      [ 
+        profiles.core
+        users.nixos 
+        users.root 
+      ];
+    };
+  };
+}

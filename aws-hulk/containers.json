@@ -1,0 +1,10 @@
+[
+  {
+    "Description": "Images",
+    "Format": "VHD",
+    "UserBucket": {
+        "S3Bucket": "vmimport",
+        "S3Key": "adguard-home.vhd"
+    }
+  }
+]

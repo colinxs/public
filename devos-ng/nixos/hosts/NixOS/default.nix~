@@ -1,0 +1,39 @@
+{ self, config, lib, pkgs, suites, ... }:
+self.inputs.nixos.lib.nixosSystem {
+  
+  system = "x86_64-linux";
+  modules = [({ ... }: {
+    ### root password is empty by default ###
+    imports =
+      suites.base
+      ++ [
+        # ./configuration.nix
+      ];
+    config = {
+      nix.systemFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
+
+      virtualisation.forwardPorts = [
+        { from = "host"; host.port = 2222; guest.port = 22; }
+      ];
+      services.qemuGuest.enable = true;
+      virtualisation.libvirtd.enable = true;
+      virtualisation.qemu.guestAgent.enable = true;
+      virtualisation.qemu.options = [
+        "-bios" "${pkgs.OVMF.fd}/FV/OVMF.fd"
+      ];
+      virtualisation.libvirtd.qemu.runAsRoot = true;
+      virtualisation.kvmgt.enable = true;
+      virtualisation.qemu.networkingOptions = [
+        "-nic bridge,br=virbr0,model=virtio-net-pci,helper=/usr/libexec/qemu-bridge-helper"
+      ];
+
+
+      boot.loader.systemd-boot.enable = true;
+      boot.loader.efi.canTouchEfiVariables = true;
+
+      networking.networkmanager.enable = true;
+
+      fileSystems."/" = { device = "/dev/disk/by-label/nixos"; };
+  };
+})];
+}
