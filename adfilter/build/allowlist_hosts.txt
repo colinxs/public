@@ -1,9 +1,15 @@
 !
 ! Title: Allowlisted Domains
-! Last modified: 2022-08-14T03:29:42.137Z
+! Last modified: 2022-08-14T03:48:44.313Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.14
 !
+!
+! Source name: Local
+! Source: allowlist.txt
+!
+colinxs.com
+localhost
 conversantmedia.com
 dotomi.com
 #
