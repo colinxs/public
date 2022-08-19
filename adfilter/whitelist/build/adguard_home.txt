@@ -26,6 +26,7 @@
 @@||ad.doubleclick.net$important
 @@||ad.nwi.jp$important
 @@||adc.api.nine.com.au$important
+@@||adclick.g.doubleclick.net$important
 @@||adcr.naver.com$important
 @@||adf.ly$important
 @@||adfoc.us$important
@@ -296,6 +297,7 @@
 @@||amazonaws.com$important
 @@||amd.cdn.turner.com$important
 @@||amgload.net$important
+@@||amplitude.com$important
 @@||amzn.com$important
 @@||amzn.to$important
 @@||analitik.edevlet.gov.tr$important
@@ -340,6 +342,7 @@
 @@||awstrack.me$important
 @@||ax.phobos.apple.com.edgesuite.net$important
 @@||bamgrid.com$important
+@@||bannerconnect.com$important
 @@||bat.bing.com$important
 @@||be-go.kelkoogroup.net$important
 @@||bfast.com$important
@@ -352,6 +355,7 @@
 @@||branch.io$important
 @@||brightcove.net$important
 @@||bs.serving-sys.com$important
+@@||bugherd.com$important
 @@||bugsnag.com$important
 @@||buyeasy.by$important
 @@||bytedance.com$important
@@ -438,11 +442,12 @@
 @@||ct.pinterest.com$important
 @@||ct.sendgrid.net$important
 @@||ctldl.windowsupdate.com$important
+@@||ctrip.com$important
 @@||cts.businesswire.com$important
 @@||custom.bnc.lt$important
+@@||customer.io$important
 @@||customlinks.appsflyer.com$important
 @@||customtraffic.impactradius.com$important
-@@||custumer.io$important
 @@||cws.conviva.com$important
 @@||cwtv-mrss-akamai.cwtv.com$important
 @@||cwtv-prod-elb.digitalsmiths.net$important
@@ -496,6 +501,7 @@
 @@||e7065.e2.akamaiedge.net$important
 @@||ea.galerieslafayette.com$important
 @@||easylist.club$important
+@@||easysol.net$important
 @@||eboundservices.com$important
 @@||ec-ns.sascdn.com$important
 @@||ecn.dev.virtualearth.net$important
@@ -504,6 +510,7 @@
 @@||edge.api.brightcove.com$important
 @@||edigitalsurvey.com$important
 @@||eds.xboxlive.com$important
+@@||eksiup.com$important
 @@||el2.convertkit-mail.com$important
 @@||email-tracking.infobip.com$important
 @@||email.docker.com$important
@@ -545,6 +552,7 @@
 @@||fbcdn-creative-a.akamaihd.net$important
 @@||fbcdn.net$important
 @@||fi-go.kelkoogroup.net$important
+@@||firebaselogging-pa.googleapis.com$important
 @@||fireworkapi.com$important
 @@||fireworktv.com$important
 @@||fitanalytics.com$important
@@ -568,6 +576,7 @@
 @@||geo.ngtv.io$important
 @@||geo3.ggpht.com$important
 @@||georiot.com$important
+@@||geotrust.com$important
 @@||getdrip.com$important
 @@||gfwsl.geforce.com$important
 @@||giphy.com$important
@@ -613,6 +622,7 @@
 @@||howsmyssl.com$important
 @@||href.li$important
 @@||hs.eloqua.com$important
+@@||hscoscdn20.net$important
 @@||hsdn.org$important
 @@||hu-go.kelkoogroup.net$important
 @@||hubspotemail.net$important
@@ -663,6 +673,7 @@
 @@||kaptcha.com$important
 @@||keystone.mwbsys.com$important
 @@||kqzyfj.com$important
+@@||kumascans.com$important
 @@||lasagneandands.com$important
 @@||lastfm-img2.akamaized.net$important
 @@||licensing.xboxlive.com$important
@@ -684,6 +695,7 @@
 @@||litix.io$important
 @@||live.com$important
 @@||livepassdl.conviva.com$important
+@@||livetex.ru$important
 @@||lm.licenses.adobe.com$important
 @@||loader.adrelayer.com$important
 @@||loadercdn.com$important
@@ -713,6 +725,7 @@
 @@||meta.plex.tv$important
 @@||micpn.com$important
 @@||microsoftonline.com$important
+@@||middleware.p7s1.io$important
 @@||minexmr.com$important
 @@||mixpanel.com$important
 @@||mktoweb.com$important
@@ -833,6 +846,7 @@
 @@||pubsub.plex.tv$important
 @@||pulsar.ebay.com$important
 @@||pushbullet.com$important
+@@||pushpushgo.com$important
 @@||pvtag.yahoo.co.jp$important
 @@||qksrv.net$important
 @@||qualtrics.com$important
@@ -947,6 +961,7 @@
 @@||suite15.emarsys.net$important
 @@||sumologic.com$important
 @@||supplyframe.com$important
+@@||sv.aq.qq.com$important
 @@||syndication.exosrv.com$important
 @@||syndication.realsrv.com$important
 @@||sysctl.org$important
@@ -967,6 +982,7 @@
 @@||target.georiot.com$important
 @@||tawk.to$important
 @@||tc.tradetracker.com$important
+@@||team-rec.jp$important
 @@||techtarget.com$important
 @@||tedcdn.com$important
 @@||telemetry.mozilla.org$important
@@ -1017,6 +1033,7 @@
 @@||uim.tifbs.net$important
 @@||uk-go.kelkoogroup.net$important
 @@||unagi-na.amazon.com$important
+@@||unpkg.com$important
 @@||upgrade.scdn.com$important
 @@||ups.ksmobile.net$important
 @@||uralweb.ru$important
@@ -1106,6 +1123,7 @@
 @@||z.cdn.turner.com$important
 @@||zdbb.net$important
 @@||zee.cws.conviva.com$important
+@@||zenaps.com$important
 @@||zeustracker.abuse.ch$important
 @@||ziffdavis.com$important
 @@||zmctrack.net$important

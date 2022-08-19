@@ -26,6 +26,7 @@
 @@||ad.doubleclick.net$document
 @@||ad.nwi.jp$document
 @@||adc.api.nine.com.au$document
+@@||adclick.g.doubleclick.net$document
 @@||adcr.naver.com$document
 @@||adf.ly$document
 @@||adfoc.us$document
@@ -296,6 +297,7 @@
 @@||amazonaws.com$document
 @@||amd.cdn.turner.com$document
 @@||amgload.net$document
+@@||amplitude.com$document
 @@||amzn.com$document
 @@||amzn.to$document
 @@||analitik.edevlet.gov.tr$document
@@ -340,6 +342,7 @@
 @@||awstrack.me$document
 @@||ax.phobos.apple.com.edgesuite.net$document
 @@||bamgrid.com$document
+@@||bannerconnect.com$document
 @@||bat.bing.com$document
 @@||be-go.kelkoogroup.net$document
 @@||bfast.com$document
@@ -352,6 +355,7 @@
 @@||branch.io$document
 @@||brightcove.net$document
 @@||bs.serving-sys.com$document
+@@||bugherd.com$document
 @@||bugsnag.com$document
 @@||buyeasy.by$document
 @@||bytedance.com$document
@@ -438,11 +442,12 @@
 @@||ct.pinterest.com$document
 @@||ct.sendgrid.net$document
 @@||ctldl.windowsupdate.com$document
+@@||ctrip.com$document
 @@||cts.businesswire.com$document
 @@||custom.bnc.lt$document
+@@||customer.io$document
 @@||customlinks.appsflyer.com$document
 @@||customtraffic.impactradius.com$document
-@@||custumer.io$document
 @@||cws.conviva.com$document
 @@||cwtv-mrss-akamai.cwtv.com$document
 @@||cwtv-prod-elb.digitalsmiths.net$document
@@ -496,6 +501,7 @@
 @@||e7065.e2.akamaiedge.net$document
 @@||ea.galerieslafayette.com$document
 @@||easylist.club$document
+@@||easysol.net$document
 @@||eboundservices.com$document
 @@||ec-ns.sascdn.com$document
 @@||ecn.dev.virtualearth.net$document
@@ -504,6 +510,7 @@
 @@||edge.api.brightcove.com$document
 @@||edigitalsurvey.com$document
 @@||eds.xboxlive.com$document
+@@||eksiup.com$document
 @@||el2.convertkit-mail.com$document
 @@||email-tracking.infobip.com$document
 @@||email.docker.com$document
@@ -545,6 +552,7 @@
 @@||fbcdn-creative-a.akamaihd.net$document
 @@||fbcdn.net$document
 @@||fi-go.kelkoogroup.net$document
+@@||firebaselogging-pa.googleapis.com$document
 @@||fireworkapi.com$document
 @@||fireworktv.com$document
 @@||fitanalytics.com$document
@@ -568,6 +576,7 @@
 @@||geo.ngtv.io$document
 @@||geo3.ggpht.com$document
 @@||georiot.com$document
+@@||geotrust.com$document
 @@||getdrip.com$document
 @@||gfwsl.geforce.com$document
 @@||giphy.com$document
@@ -613,6 +622,7 @@
 @@||howsmyssl.com$document
 @@||href.li$document
 @@||hs.eloqua.com$document
+@@||hscoscdn20.net$document
 @@||hsdn.org$document
 @@||hu-go.kelkoogroup.net$document
 @@||hubspotemail.net$document
@@ -663,6 +673,7 @@
 @@||kaptcha.com$document
 @@||keystone.mwbsys.com$document
 @@||kqzyfj.com$document
+@@||kumascans.com$document
 @@||lasagneandands.com$document
 @@||lastfm-img2.akamaized.net$document
 @@||licensing.xboxlive.com$document
@@ -684,6 +695,7 @@
 @@||litix.io$document
 @@||live.com$document
 @@||livepassdl.conviva.com$document
+@@||livetex.ru$document
 @@||lm.licenses.adobe.com$document
 @@||loader.adrelayer.com$document
 @@||loadercdn.com$document
@@ -713,6 +725,7 @@
 @@||meta.plex.tv$document
 @@||micpn.com$document
 @@||microsoftonline.com$document
+@@||middleware.p7s1.io$document
 @@||minexmr.com$document
 @@||mixpanel.com$document
 @@||mktoweb.com$document
@@ -833,6 +846,7 @@
 @@||pubsub.plex.tv$document
 @@||pulsar.ebay.com$document
 @@||pushbullet.com$document
+@@||pushpushgo.com$document
 @@||pvtag.yahoo.co.jp$document
 @@||qksrv.net$document
 @@||qualtrics.com$document
@@ -947,6 +961,7 @@
 @@||suite15.emarsys.net$document
 @@||sumologic.com$document
 @@||supplyframe.com$document
+@@||sv.aq.qq.com$document
 @@||syndication.exosrv.com$document
 @@||syndication.realsrv.com$document
 @@||sysctl.org$document
@@ -967,6 +982,7 @@
 @@||target.georiot.com$document
 @@||tawk.to$document
 @@||tc.tradetracker.com$document
+@@||team-rec.jp$document
 @@||techtarget.com$document
 @@||tedcdn.com$document
 @@||telemetry.mozilla.org$document
@@ -1017,6 +1033,7 @@
 @@||uim.tifbs.net$document
 @@||uk-go.kelkoogroup.net$document
 @@||unagi-na.amazon.com$document
+@@||unpkg.com$document
 @@||upgrade.scdn.com$document
 @@||ups.ksmobile.net$document
 @@||uralweb.ru$document
@@ -1106,6 +1123,7 @@
 @@||z.cdn.turner.com$document
 @@||zdbb.net$document
 @@||zee.cws.conviva.com$document
+@@||zenaps.com$document
 @@||zeustracker.abuse.ch$document
 @@||ziffdavis.com$document
 @@||zmctrack.net$document

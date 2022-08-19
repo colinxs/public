@@ -26,6 +26,7 @@ ad.atdmt.com
 ad.doubleclick.net
 ad.nwi.jp
 adc.api.nine.com.au
+adclick.g.doubleclick.net
 adcr.naver.com
 adf.ly
 adfoc.us
@@ -296,6 +297,7 @@ amazon-adsystem.com
 amazonaws.com
 amd.cdn.turner.com
 amgload.net
+amplitude.com
 amzn.com
 amzn.to
 analitik.edevlet.gov.tr
@@ -340,6 +342,7 @@ avantlink.com
 awstrack.me
 ax.phobos.apple.com.edgesuite.net
 bamgrid.com
+bannerconnect.com
 bat.bing.com
 be-go.kelkoogroup.net
 bfast.com
@@ -352,6 +355,7 @@ brahe.apptimize.com
 branch.io
 brightcove.net
 bs.serving-sys.com
+bugherd.com
 bugsnag.com
 buyeasy.by
 bytedance.com
@@ -438,11 +442,12 @@ ct.impactradius.com
 ct.pinterest.com
 ct.sendgrid.net
 ctldl.windowsupdate.com
+ctrip.com
 cts.businesswire.com
 custom.bnc.lt
+customer.io
 customlinks.appsflyer.com
 customtraffic.impactradius.com
-custumer.io
 cws.conviva.com
 cwtv-mrss-akamai.cwtv.com
 cwtv-prod-elb.digitalsmiths.net
@@ -496,6 +501,7 @@ e.reddit.com
 e7065.e2.akamaiedge.net
 ea.galerieslafayette.com
 easylist.club
+easysol.net
 eboundservices.com
 ec-ns.sascdn.com
 ecn.dev.virtualearth.net
@@ -504,6 +510,7 @@ edge-mqtt.facebook.com
 edge.api.brightcove.com
 edigitalsurvey.com
 eds.xboxlive.com
+eksiup.com
 el2.convertkit-mail.com
 email-tracking.infobip.com
 email.docker.com
@@ -545,6 +552,7 @@ fastly-analytics.com
 fbcdn-creative-a.akamaihd.net
 fbcdn.net
 fi-go.kelkoogroup.net
+firebaselogging-pa.googleapis.com
 fireworkapi.com
 fireworktv.com
 fitanalytics.com
@@ -568,6 +576,7 @@ geo-prod.do.dsp.mp.microsoft.com
 geo.ngtv.io
 geo3.ggpht.com
 georiot.com
+geotrust.com
 getdrip.com
 gfwsl.geforce.com
 giphy.com
@@ -613,6 +622,7 @@ hotdogsandads.com
 howsmyssl.com
 href.li
 hs.eloqua.com
+hscoscdn20.net
 hsdn.org
 hu-go.kelkoogroup.net
 hubspotemail.net
@@ -663,6 +673,7 @@ k.cocooncenter.com
 kaptcha.com
 keystone.mwbsys.com
 kqzyfj.com
+kumascans.com
 lasagneandands.com
 lastfm-img2.akamaized.net
 licensing.xboxlive.com
@@ -684,6 +695,7 @@ list-manage.com
 litix.io
 live.com
 livepassdl.conviva.com
+livetex.ru
 lm.licenses.adobe.com
 loader.adrelayer.com
 loadercdn.com
@@ -713,6 +725,7 @@ meta.plex.bz
 meta.plex.tv
 micpn.com
 microsoftonline.com
+middleware.p7s1.io
 minexmr.com
 mixpanel.com
 mktoweb.com
@@ -833,6 +846,7 @@ pubsub.plex.bz
 pubsub.plex.tv
 pulsar.ebay.com
 pushbullet.com
+pushpushgo.com
 pvtag.yahoo.co.jp
 qksrv.net
 qualtrics.com
@@ -947,6 +961,7 @@ stroeerdigitalpublishing.de
 suite15.emarsys.net
 sumologic.com
 supplyframe.com
+sv.aq.qq.com
 syndication.exosrv.com
 syndication.realsrv.com
 sysctl.org
@@ -967,6 +982,7 @@ tanx.com
 target.georiot.com
 tawk.to
 tc.tradetracker.com
+team-rec.jp
 techtarget.com
 tedcdn.com
 telemetry.mozilla.org
@@ -1017,6 +1033,7 @@ ui.skype.com
 uim.tifbs.net
 uk-go.kelkoogroup.net
 unagi-na.amazon.com
+unpkg.com
 upgrade.scdn.com
 ups.ksmobile.net
 uralweb.ru
@@ -1106,6 +1123,7 @@ yt3.ggpht.com
 z.cdn.turner.com
 zdbb.net
 zee.cws.conviva.com
+zenaps.com
 zeustracker.abuse.ch
 ziffdavis.com
 zmctrack.net
