@@ -85,6 +85,7 @@ https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
 
 # Peter Lowe: Modified to use 0.0.0.0
 # https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext&useip=0.0.0.0
+# Peter Lowe: Modified to use ADP syntax 
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
 ===
 ===
@@ -97,11 +98,11 @@ https://abp.oisd.nl/basic/
 # 1Hosts (mini)
 # https://o0.pages.dev/mini/adblock.txt
 # ===
-# ===
+===
 
 # AdGuard Filter unblocking search ads and self-promotion
-https://filters.adtidy.org/extension/ublock/filters/10.txt
-https://filters.adtidy.org/ios/filters/10_optimized.txt
+# https://filters.adtidy.org/extension/ublock/filters/10.txt
+# https://filters.adtidy.org/ios/filters/10_optimized.txt
 ---
 
 # Personal Whitelist
