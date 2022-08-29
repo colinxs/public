@@ -1009,6 +1009,7 @@
 @@||track.adform.net$document
 @@||track.customer.io$document
 @@||track.effiliation.com$document
+@@||track.seadform.net$document
 @@||track.ucas.com$document
 @@||track.webgains.com$document
 @@||trackcmp.net$document
