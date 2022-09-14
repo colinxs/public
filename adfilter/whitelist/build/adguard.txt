@@ -676,6 +676,7 @@
 @@||kumascans.com$document
 @@||lasagneandands.com$document
 @@||lastfm-img2.akamaized.net$document
+@@||lfjack.com$document
 @@||licensing.xboxlive.com$document
 @@||link.digitaladvisor.dk$document
 @@||link.epicgames.com$document
