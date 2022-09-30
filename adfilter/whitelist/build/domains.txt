@@ -22,6 +22,7 @@ a790.w16.akamai.net
 acdn.adnxs.com
 action.metaffiliation.com
 activate.adobe.com
+ad-shield.io
 ad.atdmt.com
 ad.doubleclick.net
 ad.nwi.jp
@@ -895,6 +896,7 @@ sa.bbc.com
 sa.symcb.com
 sailthru.com
 sajari.com
+salesmanago.pl
 sas.com
 sascdn.com
 sbs.com.au

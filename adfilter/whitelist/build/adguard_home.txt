@@ -22,6 +22,7 @@
 @@||acdn.adnxs.com$important
 @@||action.metaffiliation.com$important
 @@||activate.adobe.com$important
+@@||ad-shield.io$important
 @@||ad.atdmt.com$important
 @@||ad.doubleclick.net$important
 @@||ad.nwi.jp$important
@@ -895,6 +896,7 @@
 @@||sa.symcb.com$important
 @@||sailthru.com$important
 @@||sajari.com$important
+@@||salesmanago.pl$important
 @@||sas.com$important
 @@||sascdn.com$important
 @@||sbs.com.au$important
