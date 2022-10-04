@@ -724,6 +724,7 @@
 @@||meta-db-worker02.pop.ric.plex.bz$document
 @@||meta.plex.bz$document
 @@||meta.plex.tv$document
+@@||metricool.com$document
 @@||micpn.com$document
 @@||microsoftonline.com$document
 @@||middleware.p7s1.io$document
