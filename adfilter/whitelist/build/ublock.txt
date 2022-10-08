@@ -684,6 +684,7 @@
 @@||link.springer.com$document
 @@||link.theplatform.com$document
 @@||linkifier.com$document
+@@||links.iterable.com$document
 @@||links.mkt41.net$document
 @@||links.mkt51.net$document
 @@||links.mkt61.net$document
