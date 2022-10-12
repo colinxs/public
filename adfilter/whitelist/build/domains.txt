@@ -673,6 +673,7 @@ justanswer.com
 k.cocooncenter.com
 kaptcha.com
 keystone.mwbsys.com
+kinesis.eu-west-1.amazonaws.com
 kqzyfj.com
 kumascans.com
 lasagneandands.com

@@ -673,6 +673,7 @@
 @@||k.cocooncenter.com$important
 @@||kaptcha.com$important
 @@||keystone.mwbsys.com$important
+@@||kinesis.eu-west-1.amazonaws.com$important
 @@||kqzyfj.com$important
 @@||kumascans.com$important
 @@||lasagneandands.com$important
