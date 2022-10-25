@@ -858,6 +858,7 @@
 @@||r.mail.ru$document
 @@||r20.rs6.net$document
 @@||raw.githubusercontent.com$document
+@@||rb.gy$document
 @@||rd.bizrate.com$document
 @@||rd.rakuten.co.jp$document
 @@||rdstation.com$document
