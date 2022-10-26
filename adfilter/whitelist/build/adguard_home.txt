@@ -371,6 +371,7 @@
 @@||cdn.fbsbx.com$important
 @@||cdn.optimizely.com$important
 @@||cdn.refersion.com$important
+@@||cdn.rollbar.com$important
 @@||cdn.samsungcloudsolution.com$important
 @@||cdn.vidible.tv$important
 @@||cdn1.smartadserver.com$important

@@ -371,6 +371,7 @@ cdn.embedly.com
 cdn.fbsbx.com
 cdn.optimizely.com
 cdn.refersion.com
+cdn.rollbar.com
 cdn.samsungcloudsolution.com
 cdn.vidible.tv
 cdn1.smartadserver.com
