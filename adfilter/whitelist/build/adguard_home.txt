@@ -947,6 +947,7 @@
 @@||snap.com$important
 @@||society6.com$important
 @@||sojern.com$important
+@@||solution.weborama.fr$important
 @@||solutions.tradedoubler.com$important
 @@||someonewhocares.org$important
 @@||sp-prod.net$important
