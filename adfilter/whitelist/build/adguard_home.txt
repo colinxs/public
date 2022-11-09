@@ -958,6 +958,7 @@
 @@||ssl.p.jwpcdn.com$important
 @@||ssp.rambler.ru$important
 @@||staging.plex.tv$important
+@@||static.addtoany.com$important
 @@||stats.appsflyer.com$important
 @@||stats.lt$important
 @@||stats.streamelements.com$important

@@ -958,6 +958,7 @@ ssl.google-analytics.com
 ssl.p.jwpcdn.com
 ssp.rambler.ru
 staging.plex.tv
+static.addtoany.com
 stats.appsflyer.com
 stats.lt
 stats.streamelements.com
