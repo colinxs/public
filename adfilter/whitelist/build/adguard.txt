@@ -281,6 +281,7 @@
 @@||adverigo.com$document
 @@||ae01.alicdn.com$document
 @@||affiliatefuture.com$document
+@@||affiliatly.com$document
 @@||affirm.com$document
 @@||afiliados.hostgator.com.br$document
 @@||afl.rakuten.co.jp$document
