@@ -1106,6 +1106,7 @@
 @@||www.msftconnecttest.com$important
 @@||www.msftncsi.com$important
 @@||www.no-ip.com$important
+@@||www.npttech.com$important
 @@||www.ojrq.net$important
 @@||www.onenetworkdirect.net$important
 @@||www.ow.ly$important
