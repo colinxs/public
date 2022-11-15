@@ -1134,6 +1134,7 @@
 @@||youtube-nocookie.com$document
 @@||yt3.ggpht.com$document
 @@||z.cdn.turner.com$document
+@@||za.zdn.vn$document
 @@||zdbb.net$document
 @@||zee.cws.conviva.com$document
 @@||zenaps.com$document
