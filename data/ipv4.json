@@ -1,0 +1,191 @@
+{
+	"ThisNetwork": {
+		"Addresses": ["0.0.0.0/8"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC791"],
+		"Reserved": true,
+		"Source": true
+	},
+	"ThisHostThisNetwork": {
+		"Addresses": ["0.0.0.0/32"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC1122"],
+		"Reserved": true,
+		"Source": true
+	},
+	"PrivateUse": {
+		"Addresses": ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC1918"],
+		"Reserved": false,
+		"Source": true
+	},
+	"SharedAddressSpace": {
+		"Addresses": ["100.64.0.0/10"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC6598"],
+		"Reserved": false,
+		"Source": true
+	},
+	"LoopbackNetwork": {
+		"Addresses": ["127.0.0.0/8"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC1122"],
+		"Reserved": true,
+		"Source": false
+	},
+	"LoopbackAddress": {
+		"Addresses": ["127.0.0.1"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC1122"],
+		"Reserved": true,
+		"Source": false
+	},
+	"LinkLocal": {
+		"Addresses": ["169.254.0.0/16"],
+		"Destination": true,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC3927"],
+		"Reserved": true,
+		"Source": true
+	},
+	"IETFProtocolAssignments": {
+		"Addresses": ["192.0.0.0/24 [2]"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC6890"],
+		"Reserved": false,
+		"Source": false
+	},
+	"DSLite": {
+		"Addresses": ["192.0.0.0/29"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC7335"],
+		"Reserved": false,
+		"Source": true
+	},
+	"Dummy": {
+		"Addresses": ["192.0.0.8/32"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC7600"],
+		"Reserved": false,
+		"Source": true
+	},
+	"PCP": {
+		"Addresses": ["192.0.0.9/32"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7723"],
+		"Reserved": false,
+		"Source": true
+	},
+	"TURN": {
+		"Addresses": ["192.0.0.10/32"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC8155"],
+		"Reserved": false,
+		"Source": true
+	},
+	"NAT64/DNS64": {
+		"Addresses": ["192.0.0.170/32, 192.0.0.171/32"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC8880", "RFC7050"],
+		"Reserved": true,
+		"Source": false
+	},
+	"Documentation": {
+		"Addresses": ["192.0.2.0/24", "198.51.100.0/24", "203.0.113.0/24"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC5737"],
+		"Reserved": false,
+		"Source": false
+	},
+	"AS112": {
+		"Addresses": ["192.31.196.0/24"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7535"],
+		"Reserved": false,
+		"Source": true
+	},
+	"AMT": {
+		"Addresses": ["192.52.193.0/24"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7450"],
+		"Reserved": false,
+		"Source": true
+	},
+	"Deprecated/6to4Relay": {
+		"Addresses": ["192.88.99.0/24"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC7526"],
+		"Reserved": false,
+		"Source": false
+	},
+	"AS112Direct": {
+		"Addresses": ["192.175.48.0/24"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7534"],
+		"Reserved": false,
+		"Source": true
+	},
+	"Benchmarking": {
+		"Addresses": ["198.18.0.0/15"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC2544"],
+		"Reserved": false,
+		"Source": true
+	},
+	"Reserved": {
+		"Addresses": ["240.0.0.0/4"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC1112"],
+		"Reserved": true,
+		"Source": false
+	},
+	"Broadcast": {
+		"Addresses": ["255.255.255.255/32"],
+		"Destination": true,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC8190", "RFC919"],
+		"Reserved": true,
+		"Source": false
+	}
+}

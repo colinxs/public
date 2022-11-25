@@ -1,0 +1,185 @@
+{
+
+	"LoopbackAddress": {
+		"Addresses": ["::1/128"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC4291"],
+		"Reserved": true,
+		"Source": false
+	},
+	"UnspecifiedAddress": {
+		"Addresses": ["::/128"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC4291"],
+		"Reserved": true,
+		"Source": true
+	},
+	"IPv4Mapped": {
+		"Addresses": ["::ffff:0:0/96"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC4291"],
+		"Reserved": true,
+		"Source": false
+	},
+	"IPv4-IPv6-Translation": {
+		"Addresses": ["64:ff9b::/96"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"Name": "IPv4-IPv6 Translat.",
+		"RFC": ["RFC6052"],
+		"Reserved": false,
+		"Source": true
+	},
+	"IPv4-IPv6-Translation-Local": {
+		"Addresses": ["64:ff9b:1::/48"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC8215"],
+		"Reserved": false,
+		"Source": true
+	},
+	"DiscardOnly": {
+		"Addresses": ["100::/64"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC6666"],
+		"Reserved": false,
+		"Source": true
+	},
+	"IETFProtocolAssignments": {
+		"Addresses": ["2001::/23"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC2928"],
+		"Reserved": false,
+		"Source": false
+	},
+	"TEREDO": {
+		"Addresses": ["2001::/32"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC4380", "RFC8190"],
+		"Reserved": false,
+		"Source": true
+	},
+	"PCP": {
+		"Addresses": ["2001:1::1/128"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7723"],
+		"Reserved": false,
+		"Source": true
+	},
+	"TURN": {
+		"Addresses": ["2001:1::2/128"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC8155"],
+		"Reserved": false,
+		"Source": true
+	},
+	"Benchmarking": {
+		"Addresses": ["2001:2::/48"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC5180"],
+		"Reserved": false,
+		"Source": true
+	},
+	"AMT": {
+		"Addresses": ["2001:3::/32"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7450"],
+		"Reserved": false,
+		"Source": true
+	},
+	"AS112": {
+		"Addresses": ["2001:4:112::/48"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7535"],
+		"Reserved": false,
+		"Source": true
+	},
+	"Deprecated/ORCHID": {
+		"Addresses": ["2001:10::/28"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC4843"],
+		"Reserved": false,
+		"Source": false
+	},
+	"ORCHIDv2": {
+		"Addresses": ["2001:20::/28"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7343"],
+		"Reserved": false,
+		"Source": true
+	},
+	"Documentation": {
+		"Addresses": ["2001:db8::/32"],
+		"Destination": false,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC3849"],
+		"Reserved": false,
+		"Source": false
+	},
+	"6to4": {
+		"Addresses": ["2002::/16"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC3056"],
+		"Reserved": false,
+		"Source": true
+	},
+	"AS112Direct": {
+		"Addresses": ["2620:4f:8000::/48"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": true,
+		"RFC": ["RFC7534"],
+		"Reserved": false,
+		"Source": true
+	},
+	"UniqueLocal": {
+		"Addresses": ["fc00::/7"],
+		"Destination": true,
+		"Forwardable": true,
+		"Global": false,
+		"RFC": ["RFC4193", "RFC8190"],
+		"Reserved": false,
+		"Source": true
+	},
+	"LinkLocal": {
+		"Addresses": ["fe80::/10"],
+		"Destination": true,
+		"Forwardable": false,
+		"Global": false,
+		"RFC": ["RFC4291"],
+		"Reserved": true,
+		"Source": true
+	}
+
+}

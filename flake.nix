@@ -16,17 +16,26 @@
 
   inputs.std.url = "github:divnix/std";
   inputs.std.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.dream2nix.url = "github:nix-community/dream2nix";
-  inputs.dream2nix.inputs.nixpkgs.follows = "nixpkgs";
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-  inputs.prometheus-podman-exporter.url = "github:containers/prometheus-podman-exporter";
+  inputs.prometheus-podman-exporter.url = "github:containers/prometheus-podman-exporter?ref=v1.2.0";
   inputs.prometheus-podman-exporter.flake = false;
+  inputs.npmlock2nix.url = "github:nix-community/npmlock2nix";
+  inputs.npmlock2nix.flake = false;
+  # inputs.wrangler2.url = "github:cloudflare/wrangler2?ref=wrangler%402.4.2";
+  # inputs.wrangler2.flake = false;
+  inputs.wrangler2 = {
+    flake = false;
+    type = "github";
+    owner = "cloudflare";
+    repo = "wrangler2";
+    ref = "wrangler@2.4.2";
+  };
 
   outputs = inputs:
     let
       l = inputs.nixpkgs.lib // builtins;
     in
-      with l
+      with l;
       with inputs.std;
       growOn {
         inherit inputs;
@@ -39,6 +48,6 @@
         debug = ["inputs" "std"];
       }
       {
-        packages = harvest inputs.self ["packages"];
+        packages = harvest inputs.self ["toplevel" "apps"];
       };
 }
