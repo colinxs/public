@@ -1,0 +1,36 @@
+/ip firewall filter
+  add action=accept chain=input comment="defconf: accept ICMP after RAW" protocol=icmp
+  add action=accept chain=input comment="defconf: accept established,related,untracked" connection-state=established,related,untracked
+  add action=drop   chain=input comment="defconf: drop all not coming from LAN" in-interface-list=!LAN log=yes
+
+/ipv6 firewall filter
+  add action=accept chain=input comment="defconf: accept ICMPv6 after RAW" protocol=icmpv6
+  add action=accept chain=input comment="defconf: accept established,related,untracked" connection-state=established,related,untracked
+  add action=accept chain=input comment="defconf: accept UDP traceroute" port=33434-33534 protocol=udp
+  add action=accept chain=input comment="defconf: accept DHCPv6-Client prefix delegation." dst-port=546 protocol=udp src-address=fe80::/16
+  add action=drop   chain=input comment="defconf: drop all not coming from LAN" in-interface-list=!LAN log=yes
+
+
+/ip firewall filter
+  add action=accept chain=forward comment="defconf: accept established,related, untracked" connection-state=established,related,untracked
+  add action=drop   chain=forward comment="defconf: drop invalid" connection-state=invalid log=yes log-prefix=invalid
+  add action=drop   chain=forward comment="defconf:  drop all from WAN not DSTNATed" connection-nat-state=!dstnat connection-state=new in-interface-list=WAN log=yes log-prefix="no-dstnat"
+  add action=drop   chain=forward src-address-list=NoForward_IPv4 comment="defconf: drop bad forward IPs" log=yes
+  add action=drop   chain=forward dst-address-list=NoForward_IPv4 comment="defconf: drop bad forward IPs" log=yes
+  add action=drop   chain=forward src-address-list=Bogon_IPv4 comment="drop bogons" log=yes
+  add action=drop   chain=forward dst-address-list=Bogon_IPv4 comment="drop bogons" log=yes
+  add action=accept chain=forward comment="accept ICMP after RAW" protocol=icmp
+  add action=drop   chain=forward comment="defconf: drop everything else not coming from LAN" in-interface-list=!LAN log=yes
+
+/ipv6 firewall filter
+  add action=accept chain=forward comment="defconf: accept established,related,untracked" connection-state=established,related,untracked
+  add action=drop   chain=forward comment="defconf: drop invalid" connection-state=invalid log=yes log-prefix=invalid
+  add action=drop   chain=forward src-address-list=NoForward_IPv6 comment="defconf: drop bad forward IPs"
+  add action=drop   chain=forward dst-address-list=NoForward_IPv6 comment="defconf: drop bad forward IPs"
+  add action=drop   chain=forward comment="defconf: rfc4890 drop hop-limit=1" hop-limit=equal:1 protocol=icmpv6 log=yes log-prefix="one-hop"
+  add action=accept chain=forward comment="defconf: accept ICMPv6 after RAW" protocol=icmpv6
+  add action=drop   chain=forward comment="defconf: drop everything else not coming from LAN" in-interface-list=!LAN log=yes
+
+
+/ip firewall nat
+  add action=masquerade chain=srcnat comment="defconf: masquerade" out-interface-list=WAN
