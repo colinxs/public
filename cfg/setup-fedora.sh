@@ -26,6 +26,9 @@ install util-linux-user ripgrep fd-find
 sudo grubby --update-kernel ALL --args "intel_iommu=on amd_iommu=on iommu=pt mitigations=off selinux=0"
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
+# Sudo
+read -p "Change 'Defaults' line in /etc/sudoers to: 'Defaults env_reset, timestamp_timeout=60'"
+
 # Shell
 install zsh
 chsh -s "$(which zsh)"
